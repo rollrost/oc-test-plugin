@@ -33,13 +33,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'OC_TEST_PLUGIN', '1.0.0' );
+define( 'OC_TEST_PLUGIN', '2.0.0' );
 
 
 function oc_test_plugin_start(){
 	echo '<div style="color:#c00;padding:10px;border:2px solid #c00;margin: 10px;">';
 	echo 'OS test plugin start version:'. OC_TEST_PLUGIN;
 	echo '</div>';
+	echo '<br /> NEW VERSION!!!!';
 }
 
 add_action( 'flatsome_after_header', 'oc_test_plugin_start' );
